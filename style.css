@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+}
+
+::placeholder {
+  color: rgb(221, 221, 221);
+}
+
+.wrapper {
+  height: 100svh;
+  width: 100svw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(20, 19, 19);
+}
+
+.container {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+input {
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  cursor: pointer;
+  width: 70px;
+  background-color: rgb(47, 51, 50);
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  margin: 0.2em;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  margin-bottom: 4px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  background-color: rgb(47, 51, 50);
+  width: 70%;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(101, 101, 101);
+  color: #fff;
+}
+
+#clear-button {
+  color: #fff;
+  background-color: rgb(255, 42, 42);
+}
+
+@media screen and (max-width: 768px) {
+  input[type="text"] {
+    width: 70%;
+  }
+  .first-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 280px;
+    display: block;
+  }
+  input[type="text"] {
+    width: 65%;
+  }
+  .first-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  input {
+    padding: 15px;
+    width: 50px;
+  }
+}
